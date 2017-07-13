@@ -1,5 +1,5 @@
 
-/*RESTAURANT DATABSE*/
+/*RESTAURANT DATABASE*/
 
 drop database if exists `restaurant`;
 create database `restaurant`;
