@@ -78,33 +78,21 @@ create table `MANAGER`(								--MANAGER TABLE
 	PRIMARY KEY (`Manager_Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-drop table if exists `WAITER`;
-create table `WAITER`(								--WAITER TABLE
-	`Waiter_Id` int NOT NULL AUTO_INCREMENT,		--WAITER ID
+drop table if exists `STAFF`;
+create table `STAFF`(								--STAFF TABLE
+	`Staff_Id` int NOT NULL AUTO_INCREMENT,		    --STAFF ID
 	`Fname` varchar(15) NOT NULL,					--FIRST NAME
 	`Lname` varchar(15) NOT NULL,					--LAST NAME	
 	`Contact` varchar(20) NOT NULL,					--CONTACT NUMBER
  	`Address` varchar(30) DEFAULT NULL,             --ADDRESS
-  	`Salary` varchar(30) DEFAULT NULL, 				--SALARY OF WAITER
+  	`Salary` varchar(30) DEFAULT NULL, 				--SALARY OF STAFF
 	`Sex` char(1) DEFAULT NULL,						--GENDER
 	`Bdate` date DEFAULT NULL,						--BIRTHDATE 
 	`Join_Date` date NOT NULL,						--JOIN DATE
 	PRIMARY KEY (`Waiter_Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-drop table if exists `CASHIER`;						--CASHIER TABLE
-create table `CASHIER`(
-	`Cashier_Id` int NOT NULL AUTO_INCREMENT,		--CASHIER ID
-	`Fname` varchar(15) NOT NULL,					--FIRST NAME
-	`Lname` varchar(15) NOT NULL,					--LAST NAME
-	`Contact` varchar(20) NOT NULL,					--CONTACT
- 	`Address` varchar(30) DEFAULT NULL,				--ADDRESS
-  	`Salary` varchar(30) DEFAULT NULL,				--SALARY
-	`Sex` char(1) DEFAULT NULL,						--GENDER
-	`Bdate` date DEFAULT NULL,						--BIRTHDATE
-	`Join_Date` date NOT NULL,						--JOINING DATE
-	PRIMARY KEY (`Cashier_Id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 drop table if exists `COOK`;						--COOK TABLE
 create table `COOK`(
